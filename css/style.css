@@ -34,11 +34,12 @@ body {
   display: grid;
   grid-template-columns: 50% repeat(5, 1fr);
   grid-template-rows: subgrid;
+  gap: 3px;
+
+  justify-items: center;
+  align-items: center;
 }
 
-.row__sets,
-.row__reps,
-.row__button {
-  text-align: center;
-  /* align-content: center; */
+.row__exercise {
+  justify-self: start;
 }
