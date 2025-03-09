@@ -1,0 +1,44 @@
+@import url("./reset.css");
+@import url("./buttons.css");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  overflow: clip;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-inline-size: 1310px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.training-desk___body {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.body__row {
+  display: grid;
+  grid-template-columns: 50% repeat(5, 1fr);
+  grid-template-rows: subgrid;
+}
+
+.row__sets,
+.row__reps,
+.row__button {
+  text-align: center;
+  /* align-content: center; */
+}
